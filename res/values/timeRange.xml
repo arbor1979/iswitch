@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timeRanges">
+        <item>@string/XNameHour</item>
+        <item>@string/XNameDay</item>
+        <item>@string/XNameMonth</item>
+        <item>@string/XNameYear</item>
+    </string-array>
+</resources>

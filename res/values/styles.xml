@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+   
+<style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- Application theme. -->
+   
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+	<style name="CustomDialog" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_anim_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_anim_exit</item>
+    </style>
+     <style name="RadioButton">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:minHeight">33dp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <style name="NumberCircleProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">10</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_circle_radius">20dp</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#000000</item>
+        <item name="progress_fill_mode">rotate</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Passing_Green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">20</item>
+        <item name="progress_circle_radius">25dp</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#70A800</item>
+        <item name="progress_text_size">11sp</item>
+        <item name="progress_text_color">#ffffff</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Beauty_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">30</item>
+        <item name="progress_circle_radius">30dp</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF3D7F</item>
+        <item name="progress_text_size">12sp</item>
+        <item name="progress_text_color">#000000</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">40</item>
+        <item name="progress_circle_radius">35dp</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">13sp</item>
+        <item name="progress_text_color">#ffffff</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">50</item>
+        <item name="progress_circle_radius">40dp</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">14sp</item>
+        <item name="progress_text_color">#000000</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Grace_Yellow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">60</item>
+        <item name="progress_circle_radius">45dp</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FFC73B</item>
+        <item name="progress_text_size">15sp</item>
+        <item name="progress_text_color">#ffffff</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Funny_Orange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF530D</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF530D</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Twinkle_Night">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#ECF0F1</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#ECF0F1</item>
+    </style>
+</resources>

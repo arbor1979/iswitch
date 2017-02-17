@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="white">#FFFFFF</color>
+     <color name="black">#000000</color>
+     <color name="titlebar">#27ae62</color>
+     <color name="topbar_btn_sel">#55ffffff</color>
+     <color name="topbar_bg">#00000000</color>
+     <color name="login_bg">#31AD64</color>
+     <color name="listhead">#cccccc</color>
+     <color name="bn_nor">#d0decd</color>
+    <color name="bn_sel">#999999</color>
+     <color name="title_sel">#66ffffff</color>
+    <color name="title_nor">#27ae62</color>
+    <color name="text_gray">#ff666666</color>
+    <color name="radio_button_selected_color">#27ae62</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="lightblue">#E5FFEB</color>
+    <color name="lightblueprogress">#029ed9</color>
+</resources>

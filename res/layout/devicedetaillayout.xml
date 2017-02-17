@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    tools:context=".activity.DeviceDetailActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<include layout="@layout/headbar"/>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        
+    	android:orientation="vertical" >
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgDevice"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/btnChangeIcon"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/colorbutton"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/changeIcon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:text="@string/deviceName"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvManager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/manager"
+                    android:textSize="16sp" />
+                
+                <ImageButton
+                    android:id="@+id/quxianbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="end"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/zhuzhuangbutton" />
+                
+            </LinearLayout>
+
+            
+
+
+            <Switch
+                android:id="@+id/swiOpenClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/status"
+                android:textOff="@string/OFF"
+                android:textOn="@string/ON" />
+
+           
+
+        </LinearLayout>
+ 			
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/yaokonglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+           
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black" >
+
+            <ImageButton
+                android:id="@+id/btnPower"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/radiusbutton"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/redpower"
+                android:tag="开关" />
+
+            <ImageButton
+                android:id="@+id/btnReturn"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:background="@drawable/radiusbutton"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/blueback"
+                android:tag="返回" />
+        </FrameLayout>
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/black" >
+
+            <Button
+                android:id="@+id/btnCenter"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/radiusbutton"
+                android:tag="播放"
+                android:text="OK"
+                android:textSize="24sp" />
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/btnCenter"
+                android:background="@drawable/radiusbutton"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/left"
+                android:tag="向左" />
+
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/btnCenter"
+                android:background="@drawable/radiusbutton"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/right"
+                android:tag="向右" />
+
+            <ImageButton
+                android:id="@+id/btnTop"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_above="@+id/btnCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/radiusbutton"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/up"
+                android:tag="向上" />
+
+            <ImageButton
+                android:id="@+id/btnDown"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/btnCenter"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/radiusbutton"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/down"
+                android:tag="向下" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+        <Button
+            android:id="@+id/grantBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/colorbutton"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/grantToOther" />
+
+	</LinearLayout>
+ </ScrollView>
+</LinearLayout>

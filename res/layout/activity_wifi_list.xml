@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+<include layout="@layout/headbar"/>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/radarBar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="30dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@anim/progress_list" />
+
+    <LinearLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/resetfactory"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新搜索"
+            android:textColor="@color/white"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/tvManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="将设备接入以下Wifi网络:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi名称：" />
+
+  
+                <Spinner android:id="@+id/wifiName"  
+ 					android:layout_width="match_parent"  
+  					android:layout_height="wrap_content"  
+ 				/> 
+            
+
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                android:id="@+id/tvDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi密码：" />
+
+            <EditText
+                android:id="@+id/wifiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="none"
+                android:ems="10" />
+
+        </LinearLayout>
+
+<Button
+    android:id="@+id/connBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="连接" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
